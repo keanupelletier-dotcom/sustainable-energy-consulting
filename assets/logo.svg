@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 180" role="img" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">Sustainable Energy Consulting</title>
+  <desc id="logoDesc">A stylized renewable energy mascot and the words Sustainable Energy Consulting with the tagline Embrace renewable sources.</desc>
+
+  <g transform="translate(5 6)">
+    <path d="M35 111C19 86 21 51 49 29C81 4 142 8 174 41C195 63 203 101 184 119C166 136 132 149 96 146C71 144 47 127 35 111Z" fill="#141515"/>
+    <path d="M52 94C69 72 127 58 161 68C150 80 138 90 117 97C96 103 72 103 52 94Z" fill="#f4f7f5"/>
+    <path d="M161 75C180 70 201 75 214 88C209 98 196 106 178 109C169 98 165 86 161 75Z" fill="#f6a50d"/>
+    <path d="M98 82C115 78 130 79 144 88L137 101C118 95 106 90 98 82Z" fill="#f6a50d"/>
+    <circle cx="108" cy="66" r="8" fill="#f4f7f5"/>
+    <circle cx="111" cy="63" r="3" fill="#141515"/>
+    <path d="M182 91C200 82 220 81 239 90C234 106 219 116 199 120C188 110 183 101 182 91Z" fill="#141515" opacity="0.9"/>
+    <path d="M208 99C223 109 241 116 259 119C247 138 227 148 201 151C189 135 191 116 208 99Z" fill="#141515" opacity="0.75"/>
+  </g>
+
+  <g transform="translate(285 18)">
+    <text x="0" y="58" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="800" fill="#1d5c44">Sustainable Energy</text>
+    <text x="0" y="98" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="800" fill="#1d5c44">Consulting</text>
+    <text x="2" y="136" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="20" fill="#2c7c58">“Embrace renewable sources”</text>
+  </g>
+</svg>

@@ -189,23 +189,33 @@ img { max-width: 100%; display: block; }
   display: flex;
   align-items: center;
   gap: 0.7rem;
-  font-weight: 800;
-  color: var(--green-800);
-  font-family: var(--font-serif);
-  font-size: 1.15rem;
-  letter-spacing: 0.01em;
+  min-height: 50px;
+}
+.nav__brand > span:last-child,
+.footer__logo > span:last-child {
+  display: none;
 }
 .nav__logo {
-  width: 40px;
-  height: 40px;
-  border-radius: 12px;
-  background: linear-gradient(135deg, var(--green-500) 0%, var(--sun-400) 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--white);
-  font-size: 1.2rem;
-  box-shadow: var(--shadow-sm);
+  display: block;
+  width: clamp(180px, 20vw, 260px);
+  height: auto;
+  min-width: 180px;
+  border-radius: 0;
+  background: transparent;
+  background-image: url("../assets/logo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  box-shadow: none;
+  overflow: hidden;
+  color: transparent;
+  font-size: 0;
+  line-height: 0;
+  object-fit: contain;
+}
+.footer__logo .nav__logo {
+  width: clamp(220px, 22vw, 300px);
+  min-width: 220px;
 }
 .nav__menu {
   display: flex;
@@ -344,7 +354,7 @@ img { max-width: 100%; display: block; }
   overflow: hidden;
   background:
     linear-gradient(120deg, rgba(11, 61, 46, 0.78) 0%, rgba(19, 83, 64, 0.65) 50%, rgba(14, 165, 233, 0.35) 100%),
-    url("https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=aerial%20view%20of%20tropical%20island%20with%20solar%20panel%20farm%20on%20green%20hills%20next%20to%20turquoise%20ocean%2C%20sustainability%20energy%20concept%2C%20golden%20hour%20light&image_size=landscape_16_9") center/cover no-repeat;
+    url("https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=aerial%20view%20of%20tropical%20island%20with%20solar%20panel%20farm%20on%20green%20hills%20next%20to%20turquoise%20ocean%2C[...]")
   color: var(--white);
   padding: clamp(5rem, 10vw, 8rem) 0 clamp(4rem, 8vw, 7rem);
 }
@@ -377,7 +387,7 @@ img { max-width: 100%; display: block; }
   padding: clamp(3rem, 6vw, 5rem) 0 clamp(2.5rem, 5vw, 4rem);
   background:
     linear-gradient(120deg, rgba(11, 61, 46, 0.88) 0%, rgba(26, 107, 82, 0.78) 100%),
-    url("https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=green%20tropical%20forest%20canopy%20with%20sunlight%20rays%20and%20sustainable%20energy%20symbols%2C%20calming%20nature%20background&image_size=landscape_16_9") center/cover no-repeat;
+    url("https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=green%20tropical%20forest%20canopy%20with%20sunlight%20rays%20and%20sustainable%20energy%20symbols%2C%20calming%20nature%20b[...]")
 }
 .hero--sub h1 { font-size: clamp(1.8rem, 3.5vw, 2.6rem); margin-bottom: 0.3rem; }
 .hero--sub p { margin-bottom: 0; opacity: 0.9; }
@@ -796,3 +806,51 @@ img { max-width: 100%; display: block; }
   .hero__cta { flex-direction: column; }
   .hero__cta .btn { width: 100%; }
 }
+
+@media (max-width: 640px) {
+  .nav__logo {
+    width: 180px;
+    min-width: 180px;
+  }
+  .footer__logo .nav__logo {
+    width: 200px;
+    min-width: 200px;
+  }
+}
+
+@media (max-width: 420px) {
+  .nav__logo {
+    width: 150px;
+    min-width: 150px;
+  }
+  .footer__logo .nav__logo {
+    width: 170px;
+    min-width: 170px;
+  }
+}
+
+/* --- New custom logo styling --- */
+.nav__brand {
+  font-weight: 800;
+  color: var(--green-800);
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  letter-spacing: 0.01em;
+}
+
+.nav__logo {
+  filter: drop-shadow(0 2px 3px rgba(15, 23, 42, 0.08));
+}
+
+.footer__logo .nav__logo {
+  filter: drop-shadow(0 2px 4px rgba(15, 23, 42, 0.15));
+}
+
+.nav__logo::before,
+.footer__logo .nav__logo::before {
+  content: "";
+}
+
+/* The old ^sun logo block is intentionally replaced by the embedded SVG logo asset. */
+
+/* End of stylesheet */
